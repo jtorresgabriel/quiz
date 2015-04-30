@@ -19,14 +19,11 @@
     </nav>
 
     <div id="contenido">
-      <h1>Autores</h1>
-      <img src="foto_autores.jpg" style="width:304px;height:228px">
-      <p>Alberto Sánchez López</p>
-      <p>Jorge Torres de Gabriel </p>
-      <video width="320" height="240" controls>
-        <source src="video_autores.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video> 
+      <form method="get" action="/quizes/answer">
+        Pregunta: <%= pregunta %> <p>
+        <input type="text" name="respuesta" value="Responda aquí"/>
+        <input type="submit" value="Enviar">
+      </form>
     </div>
 
     <footer>
