@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Quiz</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' 
+        type='text/css'
+        media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+        href='/stylesheets/wide.css' />
+    <link rel='stylesheet'
+        type='text/css'
+        media='only screen and (max-width: 480px)' 
+        href='/stylesheets/smartphone.css' />
   </head>
   <body>
 
@@ -15,14 +23,12 @@
     </header>
 
     <nav class="main" id="n1" role="navegation">
-      <ul>
-        <li><a href="/">Principal</a></li>
-        <li><a href="/author">Creditos</a></li>
-        <li><a href="/quizes/question">Preguntas</a></li>
-      </ul>
+        <a href="/"><div>Principal</div></a>
+        <a href="/quizes/question"><div>Preguntas</div></a>
+        <a href="/author"><div>Creditos</div></a>
     </nav>
 
-    <section class="main" id="s1">
+    <section class="main" id="s1" postion="fixed">
       <%- body %>
     </section>
 
