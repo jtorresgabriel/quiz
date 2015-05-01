@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Quiz</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-
-    <header>Quiz</header>
-
-    <nav>
-      <ul>
-        <li><a href="/">Principal</a></li>
-        <li><a href="/author">Creditos</a></li>
-        <li><a href="/quizes/question">Preguntas</a></li>
-      </ul>
-    </nav>
-
-    <div id="contenido">
       <form method="get" action="/quizes/answer">
         Pregunta: <%= pregunta %> <p>
         <input type="text" name="respuesta" value="Responda aquí"/>
         <input type="submit" value="Enviar">
       </form>
-    </div>
-
-    <footer>
-      <p><script>document.write(new Date());</script></p>
-    </footer>
-
-  </body>
-</html>

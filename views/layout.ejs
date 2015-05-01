@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+
+  <div id="page-wrap">
+
+    <header class="main" id="h1">
+      <h2>Quiz: El juego de las preguntas</h2>
+    </header>
+
+    <nav class="main" id="n1" role="navegation">
+      <ul>
+        <li><a href="/">Principal</a></li>
+        <li><a href="/author">Creditos</a></li>
+        <li><a href="/quizes/question">Preguntas</a></li>
+      </ul>
+    </nav>
+
+    <section class="main" id="s1">
+      <%- body %>
+    </section>
+
+    <footer class="main" id="f1">
+      <p><script>document.write(new Date());</script></p>
+    </footer>
+
+  </div>
+
+  </body>
+</html>
