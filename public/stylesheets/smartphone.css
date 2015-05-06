@@ -1,9 +1,29 @@
-body             { background: #FFF5F2; }
+body { 
+	background: #FFFFFF url(../images/bg.jpg) repeat;
+}
 
-#page-wrap:after { content: "Smartphone Layout"; }
+#page-wrap:after { 
+	content: "Smartphone"; 
+}
 
-h2 span, section h3, label.rem 
-                 { display: none; }
-body             { font-size: xx-large; }
-input, button    { font-size: x-large; }
-footer           { font-size: large; }
+#page-wrap { 
+	margin: 0%; 
+}
+header {
+	padding: 3px;
+}
+header span{
+	font-size: xx-large;
+}
+body { 
+	font-size: large; 
+}
+input, button, nav { 
+	font-size: medium; 
+}
+#barramenu{
+	height: 5px;
+}
+footer { 
+	height: 5px;
+}

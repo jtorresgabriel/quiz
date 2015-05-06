@@ -19,22 +19,26 @@
   <div id="page-wrap">
 
     <header class="main" id="h1">
-      <h2>Quiz: El juego de las preguntas</h2>
-    </header>
+  		<span>QUIZ</span>
+	</header>
 
-    <nav class="main" id="n1" role="navegation">
-        <a href="/"><div>Principal</div></a>
-        <a href="/quizes/question"><div>Preguntas</div></a>
-        <a href="/author"><div>Creditos</div></a>
-    </nav>
+    <nav class="main" id="n1" role="navigation">
+		<ul>
+			<li class="fade"><a href="/" accesskey="1" title="">INICIO</a></li>
+			<li class="fade"><a href="/quizes/question" accesskey="2" title="">PREGUNTAS</a></li>
+			<li class="fade"><a href="/author" accesskey="3" title="">CRÉDITOS</a></li>
+		</ul>
+	</nav>
 
-    <section class="main" id="s1" postion="fixed">
-      <%- body %>
-    </section>
+	<div id="barramenu"></div>
 
-    <footer class="main" id="f1">
-      <p><script>document.write(new Date());</script></p>
-    </footer>
+	<section class="main" id="s1">
+  		<div id="contenido">
+  			<%- body %>
+  		</div>
+	</section>
+
+	<footer class="main" id="f1"></footer>
 
   </div>
 

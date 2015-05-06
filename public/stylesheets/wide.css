@@ -1,8 +1,25 @@
-body { background: #FFF5F2; }
+body { 
+	background: #868695 url(../images/bg.jpg) repeat;
+}
 
-#page-wrap:after { content: "Wide Layout"; }
+#page-wrap:after { 
+	content: "Ordenador"; 
+}
 
-nav       { float: left; width: 15%; min-height: 200px ;}
-nav span  { margin: 0px 100px 0px 0px;}
-section   { float: right; width: 80%; min-height: 200px ;}
-footer    { clear: both;  display: block; }
+#page-wrap{
+	margin: 30px 50px 30px 50px; 
+}
+
+nav { 
+	min-height: 0px ;
+}
+
+section { 
+	min-height: 400px ;
+}
+
+footer { 
+	color: #FFFFFF;
+	clear: both;  
+	display: block; 
+}

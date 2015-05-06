@@ -1,45 +1,94 @@
 * { 
-	margin: 0; padding: 0; 
+	margin: 0; 
+	padding: 0; 
 }
 body { 
 	font: 16px Arial, serif; 
+	background: #FFFFFF url(../images/bg.jpg) repeat;
 }
 
 #page-wrap { 
-	margin: 2% auto; color: white; 
+	margin: 5px 5px 5px 5px; 
+	color: white; 
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,.2);
 }
-#page-wrap > .main   { 
-	border: 1px solid #CCC; padding: 1%; 
-	margin-bottom: 1px; color: black;
+#page-wrap > .main { 
+	margin-bottom: 0px; 
+	color: black;
+}
+#page-wrap:after { 
+	content: "Tablet"; 
 }
 
-section > div        { padding: 20px; }
-header, nav { background: #eee; text-align: center;}
-footer               { background: #eee; text-align: center;}
-
+section > div { 
+	padding: 20px; 
+}
+header { 
+	background: #D90000; 
+	text-align: center;
+	padding: 5px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+}
+header span{
+	color: #FFFFFF;
+	font-size: 60px;
+}
+#barramenu { 
+	background: #00468C; 
+	height: 15px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+}
 section { 
-	background: #eee; 
-	text-align: center;;
-}
-
-nav div { 
-	margin: 5px 10px 0px 0px; 
+	background: #FFFFFF; 
 	text-align: left;
-	text-decoration: none;
-	padding: 8px 8px 8px 18px;
-	color: #FFFFFF;
-	background-color: #084B8A;
-	border-radius: 3px;
 }
-nav a {
-	text-decoration: none;
-}
-nav div:hover {
-	color: #FFFFFF;
-	background-color: #086A87;
-	opacity: 0.8;
-	border-radius: 3px;
+footer { 
+	height: 15px;
+	background: #00468C; 
+	text-align: center;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-#ErrorMsgs           { color: #f61; font-size: smaler}
-.right 				 {float: right;}
+#contenido {
+	background: #FFFFFF;
+}
+
+.right {
+	float: right;
+}
+
+/*MENU*/
+nav { 
+	background: #FFFFFF; 
+	padding: 6px 0px 5px 0px;
+	font-size: large;
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+nav ul li { 
+	display: inline; 
+}
+nav ul li a {
+	text-decoration: none;
+	padding: 5px;
+	color: #FFFFFF;
+	background-color: #424251;
+	border-radius: 1px;
+}
+.fade{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.fade:hover {
+    opacity: 0.7;
+}
