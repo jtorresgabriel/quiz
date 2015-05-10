@@ -33,9 +33,21 @@ exports.answer = function(req, res) {
   }
   res.render(
     'quizes/answer', 
-    { quiz: req.quiz, 
-      respuesta: resultado
-    }
+    { quiz: req.quiz, respuesta: resultado }
   );
+};
+
+//GET /busqueda
+exports.search = function(req, res){
+  models.Quiz.findAll().then(function(quizes){
+    var busqueda;
+    var j;
+    for (j=0; j < quizes.length; j++) {
+      if (req.query.search === quizes[j].pregunta) {
+        busqueda = j;
+      }
+    }
+  res.render('quizes/search', {quizes: quizes, busqueda: busqueda });
+  }).catch(function(error) { next(error);})
 };
 

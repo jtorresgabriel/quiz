@@ -24,13 +24,18 @@
 
   <nav class="main" id="n1" role="navigation">
 		<ul>
-			<li class="fade"><a href="/" accesskey="1" title="">INICIO</a></li>
-			<li class="fade"><a href="/quizes" accesskey="2" title="">PREGUNTAS</a></li>
-			<li class="fade"><a href="/author" accesskey="3" title="">CRÉDITOS</a></li>
+			<li class="fade"><a href="/">INICIO</a></li>
+			<li class="fade"><a href="/quizes">PREGUNTAS</a></li>
+			<li class="fade"><a href="/author">CRÉDITOS</a></li>
 		</ul>
 	</nav>
 
-	<div id="barramenu"></div>
+	<div id="barramenu">
+	<center><form method="get" action="/quizes/search">
+        	<input type="text" name="search" value="Busque pregunta" onFocus="this.value=''"/>
+    		<input type="submit" value="Buscar">
+    	</form></center>
+    </div>
 
 	<section class="main" id="s1">
   		<div id="contenido">

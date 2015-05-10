@@ -22,7 +22,7 @@ input, button, nav {
 	font-size: medium; 
 }
 #barramenu{
-	height: 5px;
+	min-height: 5px;
 }
 footer { 
 	height: 5px;

@@ -37,7 +37,7 @@ header span{
 }
 #barramenu { 
 	background: #00468C; 
-	height: 15px;
+	min-height: 15px;
 	border-style: solid;
     border-width: 3px;
     border-color: #FFFFFF;
@@ -67,7 +67,7 @@ footer {
 /*MENU*/
 nav { 
 	background: #FFFFFF; 
-	padding: 6px 0px 5px 0px;
+	padding: 5px 0px 5px 0px;
 	font-size: large;
 }
 nav ul {
