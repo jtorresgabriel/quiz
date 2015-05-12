@@ -1,2 +1,9 @@
+	<table>
+	<% var i; for (i=0; i < busqueda.length; i++) { %>
+		<tr><td><a href="<%= quizes[busqueda[i]].id %>"><%= quizes[busqueda[i]].pregunta %></a></td></tr>
+	<% } %>
 
-<a href="<%= quizes[busqueda].id %>"><%= quizes[busqueda].pregunta %></a>
+		<% if(busqueda.length === 0){ %>
+			<tr><td>No se han encontrado coincidencias</td></tr>
+		<% } %>
+	</table>

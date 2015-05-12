@@ -40,11 +40,17 @@ exports.answer = function(req, res) {
 //GET /busqueda
 exports.search = function(req, res){
   models.Quiz.findAll().then(function(quizes){
-    var busqueda;
+    var busqueda = [];
     var j;
+    var i = 0;
+    var porcentaje;
+    var introducido = req.query.search.replace(" ", "%")
     for (j=0; j < quizes.length; j++) {
-      if (req.query.search === quizes[j].pregunta) {
-        busqueda = j;
+      porcentaje = '%' + quizes[j].pregunta + '%';
+      porcentaje = porcentaje.replace(" ", "%");
+      if(porcentaje.indexOf(introducido) > 0){
+      	busqueda[i] = j;
+      	i++;
       }
     }
   res.render('quizes/search', {quizes: quizes, busqueda: busqueda });
