@@ -6,6 +6,10 @@ body {
 	font: 16px Arial, serif; 
 	background: #FFFFFF url(../images/bg.jpg) repeat;
 }
+#ErrorMsgs {
+	color: #D90000; 
+	font-size: smaler;
+}
 
 #page-wrap { 
 	margin: 5px 5px 5px 5px; 
@@ -41,6 +45,8 @@ header span{
 	border-style: solid;
     border-width: 3px;
     border-color: #FFFFFF;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 section { 
 	background: #FFFFFF; 

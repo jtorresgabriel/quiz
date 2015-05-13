@@ -1,6 +1,9 @@
-	<table>
+	<h1>Listado de preguntas</h1>
+	<br>
+	<table id="preglist">
 	<% var i; for (i=0; i < quizes.length; i++) { %>
 		<tr><td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a></td></tr>
 	<% } %>
 	</table>
+	<br>
 	<a href="/quizes/new"><button type="button">Crear nueva pregunta</button></a>

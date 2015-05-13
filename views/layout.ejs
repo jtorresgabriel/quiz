@@ -39,7 +39,15 @@
 
 	<section class="main" id="s1">
   		<div id="contenido">
-  			<%- body %>
+      <% if (errors.length) { %>
+      <span id='ErrorMsgs'>
+        <% for (var i in errors) { %>
+           <span> <%= errors[i].message %> </span><br/>
+        <% } %>
+      </span>
+    <% } %>
+
+  			<div><%- body %></div>
   		</div>
 	</section>
 
