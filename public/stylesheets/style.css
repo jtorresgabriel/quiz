@@ -33,7 +33,7 @@ header {
 	text-align: center;
 	padding: 5px;
 	border-style: solid;
-    border-width: 3px;
+    border-width: 3px 3px 0px 3px;
     border-color: #FFFFFF;
 }
 header span{
@@ -43,7 +43,7 @@ header span{
 #barramenu { 
 	background: #00468C; 
 	border-style: solid;
-    border-width: 3px;
+    border-width: 0px 3px 3px 3px;
     border-color: #FFFFFF;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -68,7 +68,6 @@ footer {
 
 #right {
 	float: right;
-	padding-right: 3px;
 	padding-left: 1px;
 }
 
@@ -76,7 +75,9 @@ footer {
 nav { 
 	background: #FFFFFF; 
 	font-size: large;
-	padding-left: 3px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
 }
 nav ul {
 	list-style-type: none;
