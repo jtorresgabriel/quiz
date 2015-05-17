@@ -27,15 +27,25 @@
 			<li class="fade"><a href="/">INICIO</a></li>
 			<li class="fade"><a href="/quizes">PREGUNTAS</a></li>
 			<li class="fade"><a href="/author">CRÉDITOS</a></li>
-		</ul>
+
+  <%if(!session.user){%>
+      <li id="right" class="fade"><a href="/login">LOGIN</a></li>
+  <%}else{%>
+      <li id="right" class="fade"><%=session.user.username%> 
+      <a href="/logout">LOGOUT</a></li>
+  <%}%>
+
+   </ul>
 	</nav>
 
 	<div id="barramenu">
-	<center><form method="get" action="/quizes/search">
+	    <center>
+      <form method="get" action="/quizes/search">
         	<input type="text" name="search" value="Busque pregunta" onFocus="this.value=''"/>
     		<input type="submit" value="Buscar">
-    	</form></center>
-    </div>
+    	</form>
+      </center>
+  </div>
 
 	<section class="main" id="s1">
   		<div id="contenido">

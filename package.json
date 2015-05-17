@@ -21,6 +21,7 @@
     "debug": "~2.0.0",
     "ejs": "~0.8.5",
     "express-partials": "~0.3.0",
+    "express-session":"~1.0.3",
     "method-override": "^2.3.1",
     "sequelize": "^2.1.0",
     "pg": "^4.1.0",

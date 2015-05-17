@@ -1,12 +1,13 @@
 body { 
 	background: #868695 url(../images/bg.jpg) repeat;
+	min-width: 538px;
 }
 
-#page-wrap:after { 
+/*#page-wrap:after { 
 	content: "Ordenador"; 
-}
+}*/
 
-#page-wrap{
+#page-wrap {
 	margin: 30px 50px 30px 50px; 
 }
 

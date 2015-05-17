@@ -5,6 +5,7 @@
 body { 
 	font: 16px Arial, serif; 
 	background: #FFFFFF url(../images/bg.jpg) repeat;
+	min-width: 400px;
 }
 #ErrorMsgs {
 	color: #D90000; 
@@ -20,9 +21,9 @@ body {
 	margin-bottom: 0px; 
 	color: black;
 }
-#page-wrap:after { 
+/*#page-wrap:after { 
 	content: "Tablet"; 
-}
+}*/
 
 section > div { 
 	padding: 20px; 
@@ -41,7 +42,6 @@ header span{
 }
 #barramenu { 
 	background: #00468C; 
-	min-height: 15px;
 	border-style: solid;
     border-width: 3px;
     border-color: #FFFFFF;
@@ -66,26 +66,28 @@ footer {
 	background: #FFFFFF;
 }
 
-.right {
+#right {
 	float: right;
+	padding-right: 3px;
+	padding-left: 1px;
 }
 
 /* MENU */
 nav { 
 	background: #FFFFFF; 
-	padding: 5px 0px 5px 0px;
 	font-size: large;
+	padding-left: 3px;
 }
 nav ul {
 	list-style-type: none;
-	text-align: center;
+	text-align: left;
 }
 nav ul li { 
 	display: inline; 
 }
 nav ul li a {
 	text-decoration: none;
-	padding: 5px;
+	padding: 2px 4px 2px 4px;
 	color: #FFFFFF;
 	background-color: #424251;
 	border-radius: 1px;
