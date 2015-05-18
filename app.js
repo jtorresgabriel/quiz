@@ -44,6 +44,21 @@ app.use(function(req, res, next){
 
 app.use('/', routes);
 
+//Auto.logout
+app.use(function(req,res,next){
+    if(req.session.user){
+        if(req.session.user.hora){
+            if((new Date() - new Date(req.session.user.hora)) > 120000){ //tiempo en milisegundos
+                delete req.session.user; //borra la sesion del usuario
+                next();
+                return;
+            } 
+        }
+        req.session.user.hora = new Date();
+    }
+    next();
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
