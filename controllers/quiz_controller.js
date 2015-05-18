@@ -62,6 +62,33 @@ exports.search = function(req, res){
   }).catch(function(error) { next(error);})
 };
 
+//GET /quizes/search
+exports.stadistics = function(req, res){
+ models.Quiz.findAll({include: [{
+     model: models.Comment 
+    }]}).then(function(pregunta){
+     models.Comment.count().then(function(countComentarios){
+      var numeroPreguntas = pregunta.length;
+      var medio = countComentarios / numeroPreguntas;
+      var pregConComment = 0;
+      for(index = 0; index < numeroPreguntas; index++){
+
+        //console.log(P[index].Comments);
+        if(pregunta[index].Comments.length > 0){
+          pregConComment++;
+        }
+      }
+      var pregSinComment = numeroPreguntas - pregConComment;
+
+
+      res.render('quizes/stadistics',{errors: [], numeroPreguntas: numeroPreguntas, 
+        countComentarios: countComentarios, medio: medio.toFixed(2), 
+        pregConComment: pregConComment, pregSinComment: pregSinComment});
+
+    });
+  });
+};
+
 // GET /quizes/new
 exports.new = function(req, res) {
   var quiz = models.Quiz.build( //crea objeto quiz
