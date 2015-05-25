@@ -30,10 +30,13 @@
       <li class="fade"><a href="/quizes/stadistics">ESTADÍSTICAS</a></li>
 
   <%if(!session.user){%>
+      <li id="right" class="fade"><a href="/user">SING UP</a></li>
       <li id="right" class="fade"><a href="/login">LOGIN</a></li>
   <%}else{%>
-      <li id="right" class="fade"><%=session.user.username%> 
-      <a href="/logout">LOGOUT</a></li>
+      <li id="right"><%=session.user.username%></li>
+      <li id="right" class="fade"><a href="/user/<%=session.user.id%>/edit">SETTINGS</a></li>
+      <li id="right" class="fade"><a href="/logout">LOGOUT</a></li>
+      
   <%}%>
 
    </ul>
