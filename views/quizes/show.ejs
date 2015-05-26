@@ -1,3 +1,7 @@
+      <%if (quiz.image){%>
+      <p><img class="quiz_img" src="/media/<%= quiz.image %>"></p>
+      <%}%>
+      <br>
       <form method="get" action="/quizes/<%= quiz.id %>/answer">
         <%= quiz.pregunta %> <p>
         <input type="text" name="respuesta" value="Responda aquí" onFocus="this.value=''"/>

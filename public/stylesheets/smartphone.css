@@ -40,3 +40,8 @@ nav{
 footer { 
 	height: 5px;
 }
+.quiz_img {
+	float: none;
+	height: 150px;
+	padding: 0px;
+}

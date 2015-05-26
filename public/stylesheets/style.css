@@ -24,6 +24,11 @@ body {
 	content: "Tablet"; 
 }*/
 
+.quiz_img {
+	height: 220px;
+	float: none;
+}
+
 section > div { 
 	padding: 20px; 
 }

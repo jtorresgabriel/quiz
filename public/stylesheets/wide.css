@@ -11,6 +11,12 @@ body {
 	margin: 30px 50px 30px 50px; 
 }
 
+.quiz_img {
+	height: 250px;
+	float: left;
+	padding-right: 40px;
+}
+
 nav { 
 	min-height: 21px;
 }
