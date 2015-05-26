@@ -27,17 +27,17 @@
 		<ul>
 			<li id="left" class="fade"><a href="/">INICIO</a></li>
 			<li id="left" class="fade"><a href="/quizes">PREGUNTAS</a></li>
-			<li id="left" class="fade"><a href="/author">CRÉDITOS</a></li>
-      <li id="left" class="fade"><a href="/quizes/stadistics">ESTADÍSTICAS</a></li>
+			<li id="left" class="fade"><a href="/author">CREDITOS</a></li>
+      <li id="left" class="fade"><a href="/quizes/stadistics">STATS</a></li>
   <%if(session.user){%>
-      <li id="left" class="fade"><a href="/user/<%=session.user.id%>/quizes">MISPREGUNTAS</a></li>
+      <li id="left" class="fade"><a href="/user/<%=session.user.id%>/quizes">MIAS</a></li>
   <%}%>
 
   <%if(!session.user){%>
       <li id="right" class="fade"><a href="/user">SING UP</a></li>
       <li id="right" class="fade"><a href="/login">LOGIN</a></li>
   <%}else{%>
-      <li id="right"><%=session.user.username%></li>
+      <li id="right">| <%=session.user.username%> </li>
       <li id="right" class="fade"><a href="/user/<%=session.user.id%>/edit">SETTINGS</a></li>
       <li id="right" class="fade"><a href="/logout">LOGOUT</a></li>
       
