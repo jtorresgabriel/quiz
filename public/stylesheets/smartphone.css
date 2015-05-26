@@ -1,6 +1,6 @@
 body { 
 	background: #FFFFFF url(../images/bg.jpg) repeat;
-	min-width: 355px;
+	min-width: 300px;
 }
 
 /*#page-wrap:after { 
@@ -27,11 +27,15 @@ input, button {
 }
 nav{
 	font-size: medium;
+	min-height: 43px;
+}
+#left{
+	margin-bottom: 5px;
 }
 #right{
-	padding: 3px 3px 3px 2px;
+	padding: 3px 3px 3px 3px;
 	font-size: 10px;
-	text-align: inherit;
+	float:right;
 }
 footer { 
 	height: 5px;

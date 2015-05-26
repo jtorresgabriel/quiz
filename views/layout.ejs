@@ -18,16 +18,16 @@
 
   <div id="page-wrap">
 
-  <header class="main" id="h1">
+  	<header class="main" id="h1">
   		<span>QUIZ</span>
 	</header>
 
-  <nav class="main" id="n1" role="navigation">
+  	<nav class="main" id="n1" role="navigation">
 		<ul>
-			<li class="fade"><a href="/">INICIO</a></li>
-			<li class="fade"><a href="/quizes">PREGUNTAS</a></li>
-			<li class="fade"><a href="/author">CRÉDITOS</a></li>
-      <li class="fade"><a href="/quizes/stadistics">ESTADÍSTICAS</a></li>
+			<li id="left" class="fade"><a href="/">INICIO</a></li>
+			<li id="left" class="fade"><a href="/quizes">PREGUNTAS</a></li>
+			<li id="left" class="fade"><a href="/author">CRÉDITOS</a></li>
+      		<li id="left" class="fade"><a href="/quizes/stadistics">ESTADÍSTICAS</a></li>
 
   <%if(!session.user){%>
       <li id="right" class="fade"><a href="/user">SING UP</a></li>
@@ -39,17 +39,17 @@
       
   <%}%>
 
-   </ul>
+   		</ul>
 	</nav>
 
 	<div id="barramenu">
-	    <center>
-      <form method="get" action="/quizes/search">
+	  <center>
+      	<form method="get" action="/quizes/search">
         	<input type="text" name="search" value="Busque pregunta" onFocus="this.value=''"/>
     		<input type="submit" value="Buscar">
     	</form>
       </center>
-  </div>
+  	</div>
 
 	<section class="main" id="s1">
   		<div id="contenido">

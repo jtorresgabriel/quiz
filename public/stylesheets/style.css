@@ -5,7 +5,6 @@
 body { 
 	font: 16px Arial, serif; 
 	background: #FFFFFF url(../images/bg.jpg) repeat;
-	min-width: 400px;
 }
 #ErrorMsgs {
 	color: #D90000; 
@@ -70,6 +69,11 @@ footer {
 	float: right;
 	padding-left: 1px;
 }
+#left {
+	float: left;
+	padding-right: 1px;
+	margin-bottom: 5px;
+}
 
 /* MENU */
 nav { 
@@ -78,10 +82,10 @@ nav {
 	border-style: solid;
     border-width: 3px;
     border-color: #FFFFFF;
+    min-height: 47px;
 }
 nav ul {
 	list-style-type: none;
-	text-align: left;
 }
 nav ul li { 
 	display: inline; 

@@ -1,6 +1,6 @@
 body { 
 	background: #868695 url(../images/bg.jpg) repeat;
-	min-width: 538px;
+	min-width: 950px;
 }
 
 /*#page-wrap:after { 
@@ -12,7 +12,7 @@ body {
 }
 
 nav { 
-	min-height: 0px ;
+	min-height: 21px;
 }
 
 section { 
