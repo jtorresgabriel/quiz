@@ -87,7 +87,7 @@ nav {
 	border-style: solid;
     border-width: 3px;
     border-color: #FFFFFF;
-    min-height: 47px;
+    min-height: 21px;
 }
 nav ul {
 	list-style-type: none;
@@ -100,7 +100,6 @@ nav ul li a {
 	padding: 2px 4px 2px 4px;
 	color: #FFFFFF;
 	background-color: #424251;
-	border-radius: 1px;
 }
 .fade{
     opacity: 1;
