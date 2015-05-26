@@ -6,7 +6,8 @@
 			<td>
 				<a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a>
 			</td>
-			<%if(session.user){%>
+			<%if(session.user){
+				if (session.user.isAdmin || session.user.id === quizes[i].UserId) {%>
 			<td>
 				<a href="quizes/<%= quizes[i].id %>/edit"><button id="editar">editar</button></a>
 			</td>
@@ -17,7 +18,8 @@
 					</button>
 				</form>
 			</td>
-			<%}%>
+			<%}
+			}%>
 		</tr>
 	<% } %>
 	</table>
